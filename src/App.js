@@ -326,9 +326,8 @@ export default function App() {
                 <div className="summary-grid">
                   <div className="sum-card accent"><div className="sum-label">Total Litres</div><div className="sum-value">{s.totalQty.toFixed(2)} L</div><div className="sum-sub">Society + Neighbours</div></div>
                   <div className="sum-card accent"><div className="sum-label">Total Income</div><div className="sum-value">Rs.{s.totalAmt.toFixed(2)}</div><div className="sum-sub">Combined</div></div>
-                  <div className="sum-card"><div className="sum-label">Society</div><div className="sum-value">Rs.{s.sAmt.toFixed(2)}</div><div className="sum-sub">{s.sQty.toFixed(2)} L</div></div>
-                  <div className="sum-card"><div className="sum-label">Neighbours</div><div className="sum-value">Rs.{s.nAmt.toFixed(2)}</div><div className="sum-sub">{s.nQty.toFixed(2)} L</div></div>
-                </div>
+                  <div className="sum-card"><div className="sum-label">Avg Rate</div><div className="sum-value">Rs.{s.avgRate.toFixed(2)}</div><div className="sum-sub">Per Litre</div></div>
+<div className="sum-card"><div className="sum-label">Avg Fat / SNF</div><div className="sum-value">{s.avgFat.toFixed(1)}%</div><div className="sum-sub">SNF: {s.avgSnf.toFixed(1)}%</div></div></div>
               );
             })()}
             <div className="section-title syne">Recent Entries</div>
